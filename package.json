@@ -1,0 +1,28 @@
+{
+  "name": "seunghealthcare",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ccj9707/seunghealth.git",
+  "author": "ccj9707 <34504466+ccj9707@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack -p",
+    "start": "webpack --watch"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "webpack-cli": "^2.0.15"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "webpack": "^4.6.0",
+    "webpack-dev-server": "^3.1.3"
+  }
+}
