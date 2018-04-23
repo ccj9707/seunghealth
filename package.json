@@ -12,7 +12,7 @@
     "watch:server": "nodemon bin/seunghealth.ts"
   },
   "babel": {
-    "presets": [
+    "presets": [ 
       "env"
     ]
   },
