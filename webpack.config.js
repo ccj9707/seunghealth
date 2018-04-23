@@ -6,8 +6,8 @@ module.exports = {
     app: './workspace/src/js/main.js',
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: '/dist/',
+    path: path.resolve(__dirname, 'workspace/dist'),
+    publicPath: './workspace/dist/',
     filename: 'bundle.js'
   },
   module: {
