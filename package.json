@@ -12,7 +12,7 @@
     "watch:server": "nodemon bin/seunghealth.ts"
   },
   "babel": {
-    "presets": [ 
+    "presets": [
       "env"
     ]
   },
@@ -21,12 +21,18 @@
     "http": "^0.0.0",
     "nodemon": "^1.17.3",
     "npm-run-all": "^4.1.2",
-    "webpack-cli": "^2.0.15"
+    "webpack-cli": "^2.0.15",
+    "jquery.easing": "^1.4.1",
+    "jquery": "3.3.1",
+    "magnific-popup": "^1.1.0",
+    "scrollreveal": "3.4.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
+    "css-loader": "^0.28.11",
+    "style-loader": "^0.21.0",
     "webpack": "^4.6.0",
     "webpack-dev-server": "^3.1.3"
   }

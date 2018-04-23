@@ -1,9 +1,10 @@
 const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
 module.exports = {
   mode: 'development',
   entry: {
-    app: './workspace/src/js/main.js',
+    app: ['./workspace/src/js/creative.js']
   },
   output: {
     path: path.resolve(__dirname, 'workspace/dist'),
@@ -16,9 +17,18 @@ module.exports = {
         include: path.join(__dirname),
         loader: 'babel-loader',
         exclude: /(node_modules)|(dist)/,
-      }],
-    },
-  plugins: [],
+        },
+        {
+        test: /\.scss$/,
+        loader: ExtractTextPlugin.extract({
+           fallback: 'style-loader',
+           use: ['css-loader', 'sass-loader']
+         })
+        }
+    ]},
+  plugins: [
+     new ExtractTextPlugin({filename: "style.css"}),
+  ],
   optimization: {},
   resolve: {
     modules: ['node_modules'],
