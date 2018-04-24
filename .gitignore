@@ -2,3 +2,4 @@ node_modules
 config
 dist/bundle.js
 yarn.lock
+bower_components
