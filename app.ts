@@ -7,6 +7,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.text());
 app.use(bodyParser.urlencoded({ limit: "50mb", extended: false }));
 app.use(express.static("workspace"));
+app.use(express.static("bower_components"));
 
 app.use((err: Error, req, res, next) => {
   res.json({
